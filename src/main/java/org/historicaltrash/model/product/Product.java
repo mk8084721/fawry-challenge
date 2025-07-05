@@ -1,5 +1,7 @@
 package org.historicaltrash.model.product;
 
+import org.historicaltrash.exception.OutOfStockException;
+
 public abstract class Product {
     private String name;
     private double price;
@@ -16,23 +18,18 @@ public abstract class Product {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public double getPrice() {
         return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
     public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void reduceQuantity(int amount) throws OutOfStockException {
+        if (amount > quantity) {
+            throw new OutOfStockException(name);
+        }
+        quantity -= amount;
     }
 }
