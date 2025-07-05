@@ -1,4 +1,6 @@
-package org.historicaltrash.model;
+package org.historicaltrash.model.product;
+
+import org.historicaltrash.model.Shippable;
 
 public class ShippableProduct extends Product implements Shippable {
     private final double weight;

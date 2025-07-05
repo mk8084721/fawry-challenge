@@ -1,8 +1,10 @@
-package org.historicaltrash.model;
+package org.historicaltrash.model.product;
+
+import org.historicaltrash.model.Expirable;
 
 import java.time.LocalDate;
 
-public class ExpirableProduct extends Product implements Expirable{
+public class ExpirableProduct extends Product implements Expirable {
     private final LocalDate expiryDate;
 
     public ExpirableProduct(String name, double price, int quantity, LocalDate expiryDate) {

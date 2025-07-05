@@ -1,4 +1,7 @@
-package org.historicaltrash.model;
+package org.historicaltrash.model.product;
+
+import org.historicaltrash.model.Expirable;
+import org.historicaltrash.model.Shippable;
 
 import java.time.LocalDate;
 

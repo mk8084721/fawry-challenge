@@ -1,4 +1,4 @@
-package org.historicaltrash.model;
+package org.historicaltrash.model.product;
 
 public abstract class Product {
     private String name;

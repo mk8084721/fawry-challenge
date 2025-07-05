@@ -1,6 +1,7 @@
 package org.historicaltrash;
 
 import org.historicaltrash.model.*;
+import org.historicaltrash.model.product.*;
 
 import java.time.LocalDate;
 
